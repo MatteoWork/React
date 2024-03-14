@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client"
 import Header from "./Header"
 import MainContent from "./MainContent"
 import Footer from "./Footer"
-import index from "./index.css"
+import "./index.css"
 
 function App() {
     return (
