@@ -58,7 +58,7 @@ ReactDOM.render(
 
 */
 
-/* FOURTH
+ FOURTH
 
 const page = (
 <div>
@@ -68,20 +68,4 @@ const page = (
 )
 
 ReactDOM.render(page,document.getElementById("root")
-)
-
-*/
-
-
-// FIfth
-
-const navbar = (
-    <nav>
-        <h1>Bob's Bistro</h1>
-        <ul>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
 )
