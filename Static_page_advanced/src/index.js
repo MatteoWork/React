@@ -1,8 +1,9 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client"
 import Header from "./Header"
 import MainContent from "./MainContent"
 import Footer from "./Footer"
+import index from "./index.css"
 
 function App() {
     return (
@@ -14,4 +15,6 @@ function App() {
     )
 }
 
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.createRoot(document.getElementById("root")).render(<App />)
+
+//ReactDOM.render(<App />, document.getElementById("root"))
