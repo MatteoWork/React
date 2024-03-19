@@ -63,3 +63,7 @@ header {
     height: 35px;
     width: 100%;
 }
+
+.meme--image {
+    max-width: 100%;
+}
