@@ -41,6 +41,10 @@ header {
     gap: 17px;
 }
 
+.form--label {
+    margin-bottom: 5px;
+}
+
 .form--button {
     grid-column: 1 / -1;
     font-family: "Karla", sans-serif;
@@ -56,4 +60,6 @@ header {
     border-radius: 5px;
     border: 1px solid #D5D4d8;
     text-indent: 5px;
+    height: 35px;
+    width: 100%;
 }
