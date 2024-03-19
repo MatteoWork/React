@@ -15,7 +15,7 @@ export default function Meme() {
                     <label>Bottom Text
                         <input type="text" 
                                className="form--input" 
-                               placeholder="and take my money"/>
+                               placeholder="and take my money" />
                     </label>
                 </div>
                                 <button className="form--button">Get a new meme image 🖼</button>
