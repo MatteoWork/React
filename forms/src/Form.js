@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Form() {
 
-    const [formData, setFormData] = React.useState({firstName : "", lastName : ""})
+    const [formData, setFormData] = React.useState({firstName : "", lastName : "", email : ""})
 
     console.log(FormData)
 
@@ -28,6 +28,12 @@ export default function Form() {
                 placeholder="Last Name"
                 onChange={handleChange}
                 name ="lastName"
+            />
+            <input
+                type="email"
+                placeholder="Email"
+                onChange={handleChange}
+                name ="email"
             />
         </form>
     )
