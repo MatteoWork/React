@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Form() {
 
-    const [formData, setFormData] = React.useState({firstName : "", lastName : "", email : ""})
+    const [formData, setFormData] = React.useState({firstName : "", lastName : "", email : "", comments : ""})
 
     function handleChange(event) {
         setFormData(prevFormData => {
@@ -35,6 +35,11 @@ export default function Form() {
                 onChange={handleChange}
                 name ="email"
                 value={formData.email}
+            />
+            <textarea value={formData.comments}
+                      placeholder="Comments"
+                      onChange={handleChange}
+                      name="comments"
             />
         </form>
     )
