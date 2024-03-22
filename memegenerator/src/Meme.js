@@ -9,9 +9,12 @@ export default function Meme() {
     const [allMemes, setAllMemes] = React.useState([])
     
     React.useEffect(() => {
-        fetch("https://api.imgflip.com/get_memes")
-            .then(res => res.json())
-            .then(data => setAllMemes(data.data.memes))
+        async function getMemes() {
+            const res = await fetch("https://api.imgflip.com/get_memes")
+            const data = await res.json()
+            setAllMemes(data.data.memes)
+        }
+        getMemes()
     }, [])
     
     function getMemeImage() {
@@ -35,22 +38,26 @@ export default function Meme() {
     return (
         <main>
             <div className="form">
-                <input type="text"
-                       placeholder="Top text"
-                       className="form--input"
-                       name="topText"
-                       value={meme.topText}
-                       onChange={handleChange}
+                <input 
+                    type="text"
+                    placeholder="Top text"
+                    className="form--input"
+                    name="topText"
+                    value={meme.topText}
+                    onChange={handleChange}
                 />
-                <input type="text"
-                       placeholder="Bottom text"
-                       className="form--input"
-                       name="bottomText"  
-                       value={meme.bottomText}    
-                       onChange={handleChange}
+                <input 
+                    type="text"
+                    placeholder="Bottom text"
+                    className="form--input"
+                    name="bottomText"
+                    value={meme.bottomText}
+                    onChange={handleChange}
                 />
-                <button className="form--button"
-                        onClick={getMemeImage}>
+                <button 
+                    className="form--button"
+                    onClick={getMemeImage}
+                >
                     Get a new meme image 🖼
                 </button>
             </div>
