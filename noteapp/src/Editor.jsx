@@ -1,7 +1,7 @@
 import React from "react"
 import R from "react-mde"
-const ReactMde = R.default
 import Showdown from "showdown"
+const ReactMde = R.default
 
 export default function Editor({ currentNote, updateNote }) {
     const [selectedTab, setSelectedTab] = React.useState("write")
